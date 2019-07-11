@@ -1,0 +1,49 @@
+{
+    "manifestVersion": 1,
+    "id": "Directory-extension",
+    "version": "0.0.50",
+    "name": "Directory Extension",
+    "description": "Directory extension for TFS",
+    "publisher": "AleksandrBerezin",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "image/book.svg"
+    },
+    "contributions": [
+        {
+            "id": "directory-hub",
+            "type": "ms.vss-web.hub",
+            "description": "Directory hub",
+            "targets": ["ms.vss-web.project-admin-hub-group"],
+            "properties": {
+                "name": "Справочник Направлений",
+                "uri": "index.html"
+            }
+        }
+    ],
+    "scopes": ["vso.work_full"],
+    "files": [
+        {
+            "path": "index.html",
+            "addressable": true
+        },
+        {
+            "path": "dist/index.js",
+            "addressable": true
+        },
+        {
+            "path": "dist/style.css",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ],
+    "categories": ["Collaborate"]
+}

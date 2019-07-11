@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script src="lib/VSS.SDK.min.js"></script>
+        <link href="dist/style.css" rel="stylesheet"></head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            VSS.init();
+        </script>
+        <div id="root"></div>
+        <script type="text/javascript">
+            VSS.require(["dist/index"]);
+            VSS.notifyLoadSucceeded();
+        </script>
+    </body>
+</html>
