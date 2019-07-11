@@ -1,14 +1,15 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "es6",
-        "jsx": "react",
-        "esModuleInterop": true,
-        "moduleResolution": "node",
-        "types": ["vss-web-extension-sdk"]
-    },
-    "include": ["./src/**/*", "./externals.d.ts", "./index.d.ts"]
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"module": "esnext",
+		"target": "es6",
+		"jsx": "react",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"types": ["vss-web-extension-sdk"]
+	},
+	"include": ["./src/**/*", "./externals.d.ts", "./index.d.ts"]
 }
