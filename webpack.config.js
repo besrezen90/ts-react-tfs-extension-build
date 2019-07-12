@@ -3,6 +3,7 @@ const HTMLPlugin = require("html-webpack-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
 	entry: "./src/index",
@@ -39,12 +40,20 @@ module.exports = {
 			},
 			{
 				test: /\.less$/,
+				exclude: [path.resolve(__dirname, "node_modules")],
 				use: [
 					MiniCssExtractPlugin.loader,
 					{
 						loader: "css-loader",
 						options: {
 							modules: true
+						}
+					},
+					{
+						loader: "postcss-loader",
+						options: {
+							exec: false,
+							plugins: () => [autoprefixer()]
 						}
 					},
 					"less-loader"
