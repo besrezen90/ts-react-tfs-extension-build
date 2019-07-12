@@ -29,6 +29,7 @@ module.exports = {
 	resolve: {
 		extensions: [".js", ".ts", ".jsx", ".tsx"]
 	},
+	devtool: "inline-source-map",
 	module: {
 		rules: [
 			{

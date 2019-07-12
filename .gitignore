@@ -1,5 +1,6 @@
 node_modules
 .sonarlint
+.vscode
 release
 dist
 
