@@ -11,5 +11,5 @@
 		"experimentalDecorators": true,
 		"types": ["vss-web-extension-sdk"]
 	},
-	"include": ["./src/**/*", "./externals.d.ts", "./index.d.ts"]
+	"include": ["./src/**/*", "./externals.d.ts"]
 }
