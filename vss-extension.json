@@ -1,9 +1,9 @@
 {
     "manifestVersion": 1,
-    "id": "Directory-extension",
-    "version": "0.0.61",
-    "name": "Directory Extension",
-    "description": "Directory extension for TFS",
+    "id": "change id this extension",
+    "version": "0.0.01",
+    "name": "change name this Extension",
+    "description": "change description this extension",
     "publisher": "AleksandrBerezin",
     "targets": [
         {
@@ -11,7 +11,7 @@
         }
     ],
     "icons": {
-        "default": "image/book.svg"
+        "default": "image/logo.svg"
     },
     "contributions": [
         {
@@ -20,7 +20,7 @@
             "description": "Directory hub",
             "targets": ["ms.vss-web.project-admin-hub-group"],
             "properties": {
-                "name": "Справочник Направлений",
+                "name": "change name this extension in TFS",
                 "uri": "index.html"
             }
         }
