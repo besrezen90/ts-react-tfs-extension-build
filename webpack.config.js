@@ -44,9 +44,12 @@ module.exports = {
 				use: [
 					MiniCssExtractPlugin.loader,
 					{
-						loader: "css-loader",
+						loader: "typings-for-css-modules-loader",
 						options: {
-							modules: true
+							modules: true,
+							localIdentName: "[local]--[hash:base64:5]",
+							camelCase: "dashes",
+							namedExport: "camelCase"
 						}
 					},
 					{
