@@ -1,49 +1,49 @@
 {
-    "manifestVersion": 1,
-    "id": "change id this extension",
-    "version": "0.0.01",
-    "name": "change name this Extension",
-    "description": "change description this extension",
-    "publisher": "AleksandrBerezin",
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
-    ],
-    "icons": {
-        "default": "image/logo.svg"
+  "manifestVersion": 1,
+  "id": "change id this extension",
+  "version": "0.0.1",
+  "name": "change name this Extension",
+  "description": "change description this extension",
+  "publisher": "AleksandrBerezin",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "icons": {
+    "default": "image/logo.svg"
+  },
+  "contributions": [
+    {
+      "id": "directory-hub",
+      "type": "ms.vss-web.hub",
+      "description": "Directory hub",
+      "targets": ["ms.vss-web.project-admin-hub-group"],
+      "properties": {
+        "name": "change name this extension in TFS",
+        "uri": "index.html"
+      }
+    }
+  ],
+  "scopes": ["vso.work_full"],
+  "files": [
+    {
+      "path": "index.html",
+      "addressable": true
     },
-    "contributions": [
-        {
-            "id": "directory-hub",
-            "type": "ms.vss-web.hub",
-            "description": "Directory hub",
-            "targets": ["ms.vss-web.project-admin-hub-group"],
-            "properties": {
-                "name": "change name this extension in TFS",
-                "uri": "index.html"
-            }
-        }
-    ],
-    "scopes": ["vso.work_full"],
-    "files": [
-        {
-            "path": "index.html",
-            "addressable": true
-        },
-        {
-            "path": "dist/index.js",
-            "addressable": true
-        },
-        {
-            "path": "dist/style.css",
-            "addressable": true
-        },
-        {
-            "path": "node_modules/vss-web-extension-sdk/lib",
-            "addressable": true,
-            "packagePath": "lib"
-        }
-    ],
-    "categories": ["Collaborate"]
+    {
+      "path": "dist/index.js",
+      "addressable": true
+    },
+    {
+      "path": "dist/style.css",
+      "addressable": true
+    },
+    {
+      "path": "node_modules/vss-web-extension-sdk/lib",
+      "addressable": true,
+      "packagePath": "lib"
+    }
+  ],
+  "categories": ["Collaborate"]
 }
