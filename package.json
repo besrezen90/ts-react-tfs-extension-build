@@ -11,8 +11,21 @@
     "gallery-publish": "tfx extension publish --rev-version",
     "clean": "rimraf ./release && rimraf ./*.vsix"
   },
-  "keywords": [],
-  "author": "Aleksandr Berezin",
+  "keywords": [
+    "react",
+    "mobx",
+    "typescript",
+    "less",
+    "tfs",
+    "tfs extension",
+    "vsix",
+    "webpack"
+  ],
+  "author": {
+    "name": "Aleksandr Berezin",
+    "email": "besrezen90@mail.ru",
+    "url": "https://github.com/besrezen90"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.5.0",
